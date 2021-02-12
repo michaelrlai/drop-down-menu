@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu-container {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.menu-container.show-menu {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.menu-container > .menu-button {
+    list-style-type: none;
+}

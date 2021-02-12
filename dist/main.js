@@ -1,0 +1,1 @@
+document.addEventListener("mousedown",(e=>{if(e.target.matches(".open-menu")){const e=document.querySelector(".menu-container");e.matches(".show-menu")?e.classList.remove("show-menu"):e.classList.add("show-menu")}}));
