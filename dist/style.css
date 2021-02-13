@@ -6,43 +6,43 @@
     font-size: 16px;
 }
 
-.open-menu {
+li {
+    list-style-type: none;
+}
+
+.menus {
+    display: flex;
+    margin: 20px;
+}
+
+.dropdown-menu {
+    width: 120px;
+}
+
+.dropdown-open-button {
     border: none;
-    color: white;
-    background-color: dodgerblue;
-    padding: 5px 10px;
-    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 5px;
     outline: none;
 }
 
-.open-menu:hover {
-    cursor: pointer;
-}
-
-.menu-container {
-    opacity: 0;
-    pointer-events: none;
-    background-color: rgb(240, 240, 240);
-    width: 160px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+.dropdown-list {
     position: absolute;
+    background-color: rgb(223, 242, 255);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    width: 100px;
 }
 
-.menu-container.show-menu {
-    opacity: 1;
-    pointer-events: auto;
+.dropdown-list.dropdown-show {
 }
 
-.menu-container > .menu-button {
-    color: rgba(0, 0, 0, 0.7);
-    list-style-type: none;
-    padding: 5px 10px;
+.dropdown-list-button {
+    padding: 5px;
     border-top: 1px solid rgba(0, 0, 0, 0.3);
     border-left: 1px solid rgba(0, 0, 0, 0.3);
     border-right: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-.menu-container > .menu-button:hover {
+.dropdown-list-button:hover {
     cursor: pointer;
 }
 
